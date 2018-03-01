@@ -54,7 +54,7 @@ public class AgentRepository {
 
         session.getTransaction().begin();
 
-        Query query = emf.createQuery("UPDATE Agent i SET i.first_name = :first_name, i.last_name = :last_name, i.telephone = := telephone WHERE i.id = :id");
+        Query query = emf.createQuery("UPDATE Agent i SET i.first_name = :first_name, i.last_name = :last_name, i.telephone = :telephone WHERE i.id = :id");
 
         query.setParameter("first_name", first_name);
         query.setParameter("last_name", last_name);
