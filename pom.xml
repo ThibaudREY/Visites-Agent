@@ -3,10 +3,10 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.data.json</groupId>
-    <artifactId>xml</artifactId>
+    <artifactId>agent</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
-    <name>xml</name>
+    <name>agent</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
@@ -111,7 +111,7 @@
     </dependencies>
 
     <build>
-        <finalName>xml</finalName>
+        <finalName>agent</finalName>
 
         <plugins>
             <plugin>

@@ -6,25 +6,25 @@
         <class>com.visites.agent.model.Agent</class>
 
         <properties>
-            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost/agent"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost/visites"/>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
-            <property name="javax.persistence.jdbc.user" value="anthonypierrat"/>
-            <property name="javax.persistence.jdbc.password" value="root"/>
+            <property name="javax.persistence.jdbc.user" value="visites"/>
+            <property name="javax.persistence.jdbc.password" value="visites"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL82Dialect" />
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>
             <property name="hibernate.persistence.logging.level" value="INFO"/>
 
-            <property name="toplink.jdbc.url" value="jdbc:postgresql://localhost/agent"/>
+            <property name="toplink.jdbc.url" value="jdbc:postgresql://localhost/visites"/>
             <property name="toplink.jdbc.driver" value="org.postgresql.Driver"/>
 
-            <property name="hibernate.connection.url" value="jdbc:postgresql://localhost/agent"/>
+            <property name="hibernate.connection.url" value="jdbc:postgresql://localhost/visites"/>
             <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
 
-            <property name="openjpa.ConnectionURL" value="jdbc:postgresql://localhost/agent"/>
+            <property name="openjpa.ConnectionURL" value="jdbc:postgresql://localhost/visites"/>
             <property name="openjpa.ConnectionDriverName" value="org.postgresql.Driver"/>
 
-            <property name="eclipselink.jdbc.url" value="jdbc:postgresql://localhost/agent"/>
+            <property name="eclipselink.jdbc.url" value="jdbc:postgresql://localhost/visites"/>
             <property name="eclipselink.jdbc.driver" value="org.postgresql.Driver"/>
 
             <property name="hbm2ddl.auto" value="create"/>
