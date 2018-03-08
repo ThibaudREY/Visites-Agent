@@ -19,8 +19,8 @@ public class AgentRepository {
         session.getTransaction().begin();
 
         Agent agent = new Agent();
-        agent.setFirstName(first_name);
-        agent.setLastName(last_name);
+        agent.setFirst_name(first_name);
+        agent.setLast_name(last_name);
         agent.setTelephone(telephone);
 
         int id = (Integer) session.save(agent);
