@@ -55,4 +55,9 @@ public class    Agent implements Serializable {
     public void setTelephone(String telephone) {
         this.telephone = telephone;
     }
+
+    @Override
+    public String toString() {
+        return "{first_name:"+this.getFirst_name()+",last_name:"+this.getLast_name()+",telephone:"+this.getTelephone()+"}";
+    }
 }
