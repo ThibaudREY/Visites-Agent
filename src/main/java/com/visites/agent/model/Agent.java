@@ -32,19 +32,19 @@ public class    Agent implements Serializable {
         this.id = id;
     }
 
-    public String getFirstName() {
+    public String getFirst_name() {
         return first_name.trim();
     }
 
-    public void setFirstName(String first_name) {
+    public void setFirst_name(String first_name) {
         this.first_name = first_name;
     }
 
-    public String getLastName() {
+    public String getLast_name() {
         return last_name.trim();
     }
 
-    public void setLastName(String last_name) {
+    public void setLast_name(String last_name) {
         this.last_name = last_name;
     }
 
