@@ -58,6 +58,10 @@ public class    Agent implements Serializable {
 
     @Override
     public String toString() {
-        return "{first_name:'"+this.getFirst_name()+"',last_name:'"+this.getLast_name()+"',telephone:'"+this.getTelephone()+"'}";
+        return "{" +
+                "\"first_name\": \"" + this.getFirst_name() + "\"," +
+                "\"last_name\": \"" + this.getLast_name() + "\"," +
+                "\"telephone\": \"" + this.getTelephone() + "\"" +
+            "}";
     }
 }
