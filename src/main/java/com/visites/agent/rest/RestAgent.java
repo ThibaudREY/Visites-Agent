@@ -45,7 +45,7 @@ public class RestAgent {
     @PUT
     @Path("/{id}")
     public Response Update(
-            @QueryParam("id") int id,
+            @PathParam("id") int id,
             String body
     ) {
 
