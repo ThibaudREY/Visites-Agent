@@ -1,6 +1,7 @@
 package com.visites.agent.rest;
 
 import com.visites.agent.repository.AgentRepository;
+import org.json.JSONObject;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -45,14 +46,19 @@ public class RestAgent {
     @Path("/{id}")
     public Response Update(
             @QueryParam("id") int id,
-            @QueryParam("first_name") String first_name,
-            @QueryParam("last_name") String last_name,
-            @QueryParam("telephone") String telephone
+            String body
     ) {
+
+        JSONObject post = new JSONObject(body);
 
         AgentRepository ir = new AgentRepository();
 
-        ir.Update(id, first_name, last_name, telephone);
+        ir.Update(
+                id,
+                post.getString("first_name"),
+                post.getString("last_name"),
+                post.getString("telephone")
+        );
 
         return Response.status(200).entity("Acknoleged: true").build();
 
